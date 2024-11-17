@@ -1,0 +1,42 @@
+# Presidential Speech Analysis
+
+This repository contains two Python files designed for analyzing presidential speeches. The tools include preprocessing, tokenization, and analysis of speech data to extract insights like most frequent words and similar terms using word embeddings.
+
+---
+
+## **Files**
+
+1. **`president_helper.py`**  
+   Provides helper functions to preprocess, tokenize, and analyze presidential speeches.  
+
+2. **`main_analysis.py`**  
+   Implements speech analysis tasks such as word embeddings and similarity analysis using the functions defined in `president_helper.py`.
+
+---
+
+## **Features**
+
+### **File Descriptions**
+
+### **`president_helper.py`**  
+This module provides utility functions for speech analysis:
+- **`read_file(file_name)`**: Reads a speech file and returns its content.  
+- **`process_speeches(speeches)`**: Preprocesses and tokenizes speeches into word-level tokens.  
+- **`merge_speeches(speeches)`**: Merges sentences from multiple speeches into a single list.  
+- **`get_president_sentences(president)`**: Retrieves tokenized sentences for a specific president.  
+- **`get_presidents_sentences(presidents)`**: Retrieves tokenized sentences for multiple presidents.  
+- **`most_frequent_words(list_of_sentences)`**: Returns the most frequently used words in the speeches.
+
+---
+
+### **`main_analysis.py`**
+This script performs advanced analysis on speeches, including:
+- Reading all presidential speech files in the directory.
+- Preprocessing and tokenizing the speech data.
+- Extracting the most frequent words across speeches.
+- Training Word2Vec models for word embeddings.
+- Analyzing word similarity:
+  - Identifies words similar to "freedom" in all speeches.
+  - Performs the same analysis for specific presidents like Franklin D. Roosevelt or groups like the Mount Rushmore presidents (Washington, Jefferson, Lincoln, Theodore Roosevelt).
+
+---
